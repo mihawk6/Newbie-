@@ -1,0 +1,446 @@
+/*header*/
+.logoimg {
+    position: absolute;
+    height: 7vw;
+    width: 15vw;
+    margin-top:1vw;
+    margin-left:1vw;
+  }
+  .name {
+    position: absolute;
+    height: 6vw;
+    width: 17vw;
+    margin-top:4vw;
+    margin-left:43vw;
+    font-size: 3vw;
+  }
+  .buttons {
+    position: absolute;
+    margin-top:4vw;
+    height: 3vw;
+    width: 6vw;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2vw;
+    color:white;
+    z-index: 3;
+  }
+  /* header end*/
+  
+  /*Homepage slideshow*/
+  .content
+              {
+                position: absolute;
+                width:20vw;
+                height:50vw;
+                margin-left:9vw;
+                top:0.5vw; 
+                /*background: linear-gradient( to right,#000428,#004e92,#000428);*/
+                z-index: 1;
+              }
+  
+  .slideshow-container
+               {
+                position: absolute;
+                width:70vw; 
+                height:35vw; 
+                top: 3vw; 
+                left: 2vw;
+                margin-right:0vw;
+                right:0vw;
+                z-index: 1;
+               }
+  .mySlides
+               {
+                position: absolute;
+                width:70vw; 
+                height:35vw;
+                top: 3vw;
+                left: 2vw;
+                margin-right:0vw;
+                z-index: 1;
+                margin-left:0vw;
+               }
+  .mySlides img
+               {
+                position: absolute;
+                width:70vw; 
+                height:35vw;
+                top: 3vw;
+                left: 2vw;
+                z-index: 1;
+                margin-right:0vw;
+                margin-left:0vw;
+               }
+  /*Homepage slideshow ends*/
+  
+  
+  
+  /*login and signup pop-up*/
+  .form-popup h2 ,.s_form-popup h2
+              {
+                font-size: 3vw;
+                text-align: center;
+                z-index: 3;
+              }
+  .form-popup 
+              {
+                width:40vw;
+                height:30vw;
+                padding: 1vw 1vw 1vw 1vw;
+                display: none;
+                position: fixed;
+                top: 10vw;
+                right: 25vw;
+                border-radius: 1vw;
+                z-index: 3;
+              }
+  #myform
+              {
+                position: absolute;
+                display: none;
+                width: 42vw;
+                height: 32vw;
+                top: 10vw;
+                left: 25vw;
+                background-color: rgba(0,0,0,0.5);
+                cursor: pointer;
+                z-index: 3;
+              }
+  #myform1
+              {
+                position: absolute;
+                display: none;
+                width: 42vw;
+                height: 65vw;
+                top: 10vw;
+                left: 25vw;
+                background-color: rgba(0,0,0,0.5);
+                cursor: pointer;
+                z-index: 3;
+              }
+  .form-container
+               {
+                align-items: center;
+                width:40vw;
+                height:30vw;
+                padding: 1vw 1vw 1vw 1vw;
+                background-color: white;
+                color:#000000;
+                z-index: 3;
+              }
+  .form-container input[type=text], .form-container input[type=password], .form-container input[type=email],  .s_form-container input[type=text], .s_form-container input[type=password], .s_form-container input[type=email],.s_form-container select
+              {
+                width: 30vw;
+                height: 4vw;
+                padding: 1vw;
+                font-size: 1vw;
+                margin: 1vw 0 2vw 0;
+                border: none;
+                border-radius: 2vw;
+                background: #f1f1f1;
+                margin-left: 5vw;
+                z-index: 3;
+              }
+  .form-container button[type=submit]
+               {
+                position: absolute;
+                background-color: red;
+                color: white;
+                border: none;
+                border-radius: 2vw;
+                cursor: pointer;
+                width: 20vw;
+                font-size: 2vw;
+                left:-79vw;
+                right:90vw;
+                top:24vw;
+                bottom: 5vw;
+                z-index: 3;
+               }
+  .form-container .cancel
+               {
+                position: absolute;
+                text-decoration: bold;
+                background-color: #ffffff;
+                color: red;
+                width:1vw;
+                height: 1vw;
+                float:right;
+                top: 1.5vw;
+                left: -51vw;
+                z-index: 4;
+               }
+  .header_btn button
+  {
+  position: absolute;
+                background-color:rgba(255,255,255,0.1); 
+                color:#ffffff;
+                border: none;
+                border-radius: 0vw;
+                width:12vw;
+                height:4vw;
+                top: 1vw;
+                margin-left: 90vw;
+                font-size: 1.5vw;
+                float: right;
+                z-index: 3;
+              }
+  
+  .s_header_btn button
+              {
+                position: absolute;
+                background-color:rgba(255,255,255,0.1); 
+                color:#ffffff;
+                border: none;
+                width:10vw;
+                height:4vw;
+                top: 1vw;
+                margin-left: 80vw;
+                font-size: 1.5vw;
+                float: right;
+                z-index: 3;
+              }  
+  .s_form-container button[type=submit]
+              {
+                position: absolute;
+                background-color:red;
+                color: white;
+                border: none;
+                border-radius: 2vw;
+                cursor: pointer;
+                width: 20vw;
+                font-size: 2vw;
+                left:-70vw;
+                right:90vw;
+                top:58vw;
+                bottom: 1vw;
+                z-index: 3;
+               }
+  .s_form-container .cancel 
+               {
+                position: absolute;
+                text-decoration: bold;
+                background-color: #ffffff;
+                color: red;                                 
+                width:1vw;
+                height: 1vw;
+                float:right;
+                top: 1.5vw;
+                left: -41vw;
+                z-index: 4;
+               }
+  
+               .s_form-popup 
+              {
+                width:40vw;
+                height:63vw;
+                padding: 1vw 1vw 1vw 1vw;
+                display: none;
+                position: fixed;
+                top: 3vw;
+                right: 25vw;
+                border-radius: 0vw;
+                z-index: 3;
+              }
+              .s_form-container 
+              {
+                align-items: center;
+                width:40vw;
+                height:63vw;
+                padding: 1vw 1vw 1vw 1vw;
+                background-color: white;
+                color:#000000;
+                z-index: 3;
+              }
+  /*login and signup pop-up ends*/
+  
+  
+  
+  /*//Cards*/
+  :root {
+    --surface-color: #fff;
+    --curve: 40;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #fef8f8;
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 4rem 5vw;
+    padding: 0;
+    list-style-type: none;
+    margin-top: 40vw;
+  }
+  
+  .card {
+    position: relative;
+    display: block;
+    height: 150%;  
+    border-radius: calc(var(--curve) * 1px);
+    overflow: hidden;
+    text-decoration: none;
+  }
+  
+  .card__image {      
+    width: 100%;
+    height: auto;
+  }
+  
+  .card__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;      
+    border-radius: calc(var(--curve) * 1px);    
+    background-color: var(--surface-color);      
+    transform: translateY(100%);
+    transition: .2s ease-in-out;
+  }
+  
+  .card:hover .card__overlay {
+    transform: translateY(0);
+  }
+  
+  .card__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+    border-radius: calc(var(--curve) * 1px) 0 0 0;    
+    background-color: var(--surface-color);
+    transform: translateY(-100%);
+    transition: .2s ease-in-out;
+  }
+  
+  .card__arc {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 100%;
+    right: 0;      
+    z-index: 1;
+  }
+  
+  .card__arc path {
+    fill: var(--surface-color);
+    d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+  }       
+  
+  .card:hover .card__header {
+    transform: translateY(0);
+  }
+  
+  .card__thumb {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;      
+    border-radius: 50%;      
+  }
+  
+  .card__title {
+    font-size: 1em;
+    margin: 0 0 .3em;
+    color: #6A515E;
+  }
+  
+  .card__tagline {
+    display: block;
+    margin: 1em 0;
+    font-family: "MockFlowFont";  
+    font-size: .8em; 
+    color: #D7BDCA;  
+  }
+  
+  .card__status {
+    font-size: .8em;
+    color: #D7BDCA;
+  }
+  
+  .card__description {
+    padding: 0 2em 2em;
+    margin: 0;
+    color: black;
+    font-family: "MockFlowFont";   
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+  }    
+  .footer{
+    background-color:#CFCFCF;
+    font-size: 1.3vw;
+    width:100vw;
+    margin-left:-1vw;
+    margin-top:20vw;
+    margin-bottom: -1vw;
+    height: 3vw;
+    text-align:center;
+    color:black;
+  }
+  .space{
+            position: relative;
+            width:94vw;
+            height:20vw;
+            margin:0;
+            top:2vw;
+            margin-top: 1vw;
+            border:0.1vw solid;
+            border-color:#004e92; 
+}
+.space img{
+            position:relative;
+            width:30vw;
+            height: 18vw;
+            margin-top: 1vw;
+            margin-left:1vw;
+}
+.space h3{
+            position: relative;
+            margin-left: 1vw;
+            margin-top: 0vw;
+            font-size: 3vw;
+            text-decoration: none;
+            color:black;
+          }
+.space p{
+            position: relative;
+            margin-left: 2vw;
+            margin-top: -1vw;
+            font-size: 1.5vw;
+            text-decoration: none;
+            color:black;
+}
+.space a
+{
+    text-decoration: none;
+    color: black;
+}
+
+/* booking button css for inside the category */
+.book {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left:49vw;
+  margin-top:-3.5vw;
+  cursor: pointer;
+  background-color: #4CAF50;
+}
+  
+  

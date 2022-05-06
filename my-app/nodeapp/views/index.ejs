@@ -1,0 +1,266 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="./style1.css"> 
+</head>
+  <script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+
+function openForm1() {
+  document.getElementById("myForm1").style.display = "block";
+}
+function closeForm1() {
+  document.getElementById("myForm1").style.display = "none";
+}
+</script>
+<style>
+ button:hover {
+  background-color:#1E88E5;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+a:hover
+{
+  color:#1E88E5; 
+}
+</style>
+
+<body>
+  <div style="width:99vw;height:8.3vw; margin-top:-1vw;margin-left:-1vw;background-color:#CFCFCF; z-index: 3vw;">
+  	<a href="http://localhost:3001/"><img class="logoimg" src="r.jpg"></img></a>
+  	<p class="name"><font color:black;></font></p>
+
+    <div class="s_header_btn">
+  	<a onclick="openForm1()" class="buttons" style="margin-left: 74vw;">SignUp</a>
+<div class="s_form-popup" id="myForm1">
+        <form  class="s_form-container" action ='submit' method="POST">
+        <button type="button" class="cancel" onclick="closeForm1()">X</button>
+        <h2>Sign up</h2>
+        <input type="text" placeholder="Name" name="name" id="name"required>
+        <input type="text" placeholder="Enter Phone Number" name="phno" id="phno" required>
+        <input type="text" placeholder="Address" name="add" id="add" required>
+        <input type="text" placeholder="Enter Aadhar" name="adhar" id="adhar" required>
+        <input type="email" placeholder="Enter Email" name="email1" id="email1" required >
+        <input type="password" placeholder="Enter Password" name="psw1" id="psw1" required>
+        <center>Upload a Picture:- <input type="file" name="pic" id="pic" ></center>
+        <input type="hidden" value="u" name="type" id="type">
+        <br>
+        <button type="submit" id="submit" name="submit">Submit</button>
+        </form>
+        </div>
+    </div>
+
+<div class="header_btn">
+  	<a onclick="openForm()" class="buttons" style="margin-left:90vw;">Login</a>
+    <div class="form-popup" id="myForm">
+            <form action="login" class="form-container" method="POST">
+            <button type="button" class="cancel" onclick="closeForm()">X</button>
+            <h2>Login</h2>
+
+            <input type="email" placeholder="Enter Email" name="email" id="email" required>
+            <br>
+            <input type="password" placeholder="Enter Password" name="pass" id="pass" required>
+
+            <button type="submit" name="submit" id="submit">Submit</button><br>
+            <br><br><br><p style="margin-left:15vw;"><a href="#">Forgot password?</a></p>
+            </form>
+        </div>
+</div>
+  	<a href="/about" style="margin-left: 42vw;" class="buttons">About</a>
+    <a href="/contact" style="margin-left: 58vw;" class="buttons">Connect</a>
+  	<a href="" style="margin-left: 26vw;" class="buttons">Home</a>
+    </div>
+
+    <div class="content">
+      <p align="center" style="margin-left: -1vw; margin-top: -1vw;">
+      <div class="slideshow-container">
+  <div class="mySlides">
+    <img src="1.png">
+  </div>
+  
+  <div class="mySlides">
+    <img src="2.png">
+  </div>
+  
+  <div class="mySlides">
+    <img src="3.png">
+  </div>
+  
+  <div class="mySlides">
+    <img src="4.png">
+  </div>
+  <div class="mySlides">
+    <img src="5.png">
+  </div>
+  
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+  
+  </div>
+  </p>
+  </div>
+  <ul class="cards">
+    <li>
+      <a href="http://localhost:3001/product" class="card">
+        <img src="pro.png" class="card__image" alt="" />
+        <div class="card__overlay">
+          <div class="card__header">
+            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+            <div class="card__header-text">
+              <h3 class="card__title">Products</h3>            
+              <span class="card__status">Sell and buy items.</span>
+            </div>
+          </div>
+          <p class="card__description">You can sell your used items or can purchase items used by other students in this section.Saving you the cost of buying newer products.</p>
+        </div>
+      </a>      
+    </li>
+    <li>
+      <a href="desc.php" class="card">
+        <img src="stay.png" class="card__image" alt="" />
+        <div class="card__overlay">        
+          <div class="card__header">
+            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+            <div class="card__header-text">
+              <h3 class="card__title">Stay</h3>
+              <span class="card__status">Living solutions.</span>
+            </div>
+          </div>
+          <p class="card__description">Get information on all kinds of living solutions such as pgs,hostels,flats,sharing flats,etc.</p>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="desc.php" class="card">
+        <img src="education.png" class="card__image" alt="" />
+        <div class="card__overlay">
+          <div class="card__header">
+            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+            <div class="card__header-text">
+              <h3 class="card__title">Education</h3>          
+              <span class="card__status">Book-stores,xerox shops,second-hand book marts,etc.</span>
+            </div>
+          </div>
+          <p class="card__description">Information on all education related stores around your location.</p>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="desc.php" class="card">
+        <img src="food.png" class="card__image" alt="" />
+        <div class="card__overlay">
+          <div class="card__header">
+            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+            <div class="card__header-text">
+              <h3 class="card__title">Food</h3>
+              <span class="card__status">Most visited hangout places.</span>
+            </div>          
+          </div>
+          <p class="card__description">All the restaurants,cafes,pubs,etc.Where students spend most of their free time at.</p>
+        </div>
+      </a>
+    </li>    
+  </ul>
+
+  <!-- //Second row of items  -->
+  <div style="margin-top:-30vw;">
+  <ul class="cards">
+    <li>
+      <a href="desc.php" class="card">
+        <img src="shopping.png" class="card__image" alt="" />
+        <div class="card__overlay">
+          <div class="card__header">
+            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+            <div class="card__header-text">
+              <h3 class="card__title">Shopping</h3>            
+              <span class="card__status">Go shopping with friends.</span>
+            </div>
+          </div>
+          <p class="card__description">Explore all famous places for shopping with friends .</p>
+        </div>
+      </a>      
+    </li>
+    <li>
+      <a href="desc.php" class="card">
+        <img src="places.png" class="card__image" alt="" />
+        <div class="card__overlay">        
+          <div class="card__header">
+            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+            <div class="card__header-text">
+              <h3 class="card__title">Places to visit</h3>
+              <span class="card__status">Sight-seeing.</span>
+            </div>
+          </div>
+          <p class="card__description">Dont miss out on exploring these places.</p>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="desc.php" class="card">
+        <img src="travel.png" class="card__image" alt="" />
+        <div class="card__overlay">
+          <div class="card__header">
+            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+            <div class="card__header-text">
+              <h3 class="card__title">Travel</h3>          
+              <span class="card__status">Best routes and modes to travel around.</span>
+            </div>
+          </div>
+          <p class="card__description">Find all the timmings,stops,etc to the various places using various modes of transport and the fastes route to get to your destination.</p>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="desc.php" class="card">
+        <img src="roomate.png" class="card__image" alt="" />
+        <div class="card__overlay">
+          <div class="card__header">
+            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+            <div class="card__header-text">
+              <h3 class="card__title">Roomate</h3>
+              <span class="card__status">Find a room mate.</span>
+            </div>          
+          </div>
+          <p class="card__description">Helps you check various profiles of people registered to our system and helps you find the perfect room-mate.</p>
+        </div>
+      </a>
+    </li>    
+  </ul>
+</div>
+<footer class="footer">
+  <p align="center">
+  Copyright©2022 NewBie. All Rights Reserved. Developed & Designed by:-Adarsh Verma, C.Saranya, Reuben Mohan Kurian<br>
+</p>
+  </footer>
+  </body>
+  <script type="text/javascript">
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 5000); // Change image every 5 seconds
+    }
+    </script>
+</html>

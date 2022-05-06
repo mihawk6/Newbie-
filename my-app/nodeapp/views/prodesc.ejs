@@ -1,0 +1,98 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+	<link rel="stylesheet" type="text/css" href="./style1.css"> 
+	</head>
+  <script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+
+function openForm1() {
+  document.getElementById("myForm1").style.display = "block";
+}
+function closeForm1() {
+  document.getElementById("myForm1").style.display = "none";
+}
+</script>
+<style>
+ button:hover {
+  background-color:#1E88E5;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+a:hover
+{
+  color:#1E88E5; 
+}
+</style>
+
+<body>
+  <div style="width:100vw;height:8.3vw; margin-top:-1vw;margin-left:-1vw;background-color:#CFCFCF;">
+  	<a href="http://localhost:3001/"><img class="logoimg" src="r.jpg"></img></a>
+  	<p class="name"><font color:black;></font></p>
+
+    <div class="s_header_btn">
+  	<a onclick="openForm1()" class="buttons" style="margin-left: 74vw;">SignUp</a>
+<div class="s_form-popup" id="myForm1">
+        <form action="signup.php" class="s_form-container" method="POST">
+        <button type="button" class="cancel" onclick="closeForm1()">X</button>
+        <h2>Sign up</h2>
+        <input type="text" placeholder="Name" name="name" id="name"required>
+        <input type="text" placeholder="Enter Phone Number" name="phno" id="phno" required>
+        <input type="text" placeholder="Address" name="add" id="add" required>
+        <input type="email" placeholder="Enter Email" name="email1" id="email1" required >
+        <input type="password" placeholder="Enter Password" name="psw1" id="psw1" required>
+        <button type="submit" id="submit" name="submit">Submit</button>
+        </form>
+        </div>
+    </div>
+
+<div class="header_btn">
+  	<a onclick="openForm()" class="buttons" style="margin-left:90vw;">Login</a>
+    <div class="form-popup" id="myForm">
+            <form action="check.php" class="form-container" method="POST">
+            <button type="button" class="cancel" onclick="closeForm()">X</button>
+            <h2>Login</h2>
+
+            <input type="email" placeholder="Enter Email" name="email" id="email" required>
+            <br>
+            <input type="password" placeholder="Enter Password" name="pass" id="pass" required>
+
+            <button type="submit" name="submit" id="submit">Submit</button><br>
+            <br><br><br><p style="margin-left:15vw;"><a href="forgot.php">Forgot password?</a></p>
+            </form>
+        </div>
+</div>
+  	<a href="/about" style="margin-left: 42vw;" class="buttons">About</a>
+    <a href="/contact" style="margin-left: 58vw;" class="buttons">Connect</a>
+  	<a href="http://localhost:3001/" style="margin-left: 26vw;" class="buttons">Home</a>
+    </div>
+    <%
+    if(proDesc.length!=0){
+      proDesc.forEach(function(data){
+    %>
+    <div class="w3-container" style="margin-top: 2vw;height:20vw;width:40vw;margin-left:1.5vw;">
+        <img src=<%=data.photos %> class="w3-border" style="padding:4px;width:50%">
+      </div>
+      <div style="margin-left:22vw;margin-top:-22vw;">
+        <h3><a href="#"><%=data.name %></a></h3>
+      <h1 style="font-size: 3vw;">Description of movie:-</h1>
+      <p style="font-size: 1.2vw;"> <%=data.description %></p>
+      <h1 style="font-size: 3vw;">Contact Number:-</h1 >
+      <p style="font-size: 1.2vw;"> <%=data.contact %></p>
+      <p>Price:-RS<%=data.prices%></p>
+      </div>
+      <%   }) %>
+      <% } else{ %>
+        <h1>NOT FOUND</h1>
+        <% } %>
+    <footer class="footer">
+        <p align="center">
+        Copyright©2022 NewBie. All Rights Reserved. Developed & Designed by:-Adarsh Verma, C.Saranya, Reuben Mohan Kurian<br>
+      </p>
+        </footer>
+        </body>
